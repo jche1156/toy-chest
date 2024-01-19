@@ -1,0 +1,5 @@
+build:
+    spin build
+
+run:
+    spin up

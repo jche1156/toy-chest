@@ -1,0 +1,18 @@
+spin_manifest_version = 2
+
+[application]
+name = "spin-components"
+version = "0.1.0"
+authors = ["John Chen <john.hk.chen@gmail.com>"]
+description = "testing out some UI components"
+
+[[trigger.http]]
+route = "/..."
+component = "spin-components"
+
+[component.spin-components]
+source = "target/wasm32-wasi/release/spin_components.wasm"
+allowed_outbound_hosts = []
+[component.spin-components.build]
+command = "cargo build --target wasm32-wasi --release"
+watch = ["src/**/*.rs", "Cargo.toml"]

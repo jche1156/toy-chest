@@ -3,3 +3,8 @@ build:
 
 dev:
     dx serve --features ssr --hot-reload --platform desktop
+
+install:
+    rustup target add wasm32-unknown-unknown
+    cargo install dioxus-cli
+
