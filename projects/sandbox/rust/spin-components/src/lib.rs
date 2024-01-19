@@ -8,6 +8,6 @@ fn handle_spin_components(req: Request) -> anyhow::Result<impl IntoResponse> {
     Ok(Response::builder()
         .status(200)
         .header("content-type", "text/plain")
-        .body("Hi, CS Hub! This is my Spin Component!")
+        .body("Hi, CS Hub! This is my Spin Page!")
         .build())
 }
