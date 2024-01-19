@@ -1,0 +1,2 @@
+help:
+    echo "Try using sudo tailscale up"
