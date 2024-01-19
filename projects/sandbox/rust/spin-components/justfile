@@ -1,5 +1,8 @@
 build:
     spin build
 
-run:
+up:
     spin up
+
+ngrok:
+    ngrok http 3000
