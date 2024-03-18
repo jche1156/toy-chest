@@ -1,0 +1,6 @@
+docker run -p 10000:8888 quay.io/jupyter/scipy-notebook
+
+pip install langchain
+pip install langchain-cli
+# Set environment variables to start logging
+
